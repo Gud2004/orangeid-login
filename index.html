@@ -10,10 +10,10 @@
     <script>
       window.addEventListener("load", () => {
         BedrockPassportWidget.init({
-          tenantId: "YAHAN_APNA_PROJECT_ID_DALO",  // 🔁 Yahan tumhara OrangeID Project ID daalo
+          tenantId: "orange-m61zgyhe4v",  // 🔁 Yahan tumhara OrangeID Project ID daalo
           onAuthCallback: (userInfo) => {
             const token = userInfo.token;
-            window.location.href = "https://tumhara-streamlit-app-url.streamlit.app?token=" + token;
+            window.location.href = "https://project12-kb6vo5segdv7mecna9rsvm.streamlit.app/?token=" + token;
           },
         });
       });
