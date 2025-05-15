@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login with Orange ID</title>
+    <script src="https://cdn.bedrockpassport.com/widget.js"></script>
+  </head>
+  <body>
+    <h2>Login with Orange ID</h2>
+    <div id="bedrock-passport-widget"></div>
+    <script>
+      window.addEventListener("load", () => {
+        BedrockPassportWidget.init({
+          tenantId: "YAHAN_APNA_PROJECT_ID_DALO",  // 🔁 Yahan tumhara OrangeID Project ID daalo
+          onAuthCallback: (userInfo) => {
+            const token = userInfo.token;
+            window.location.href = "https://tumhara-streamlit-app-url.streamlit.app?token=" + token;
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
